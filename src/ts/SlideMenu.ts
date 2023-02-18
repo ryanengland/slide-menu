@@ -424,6 +424,7 @@ class SlideMenu {
         backLink.innerHTML = backLinkBefore + anchorText + backLinkAfter;
         backLink.classList.add(SlideMenu.CLASS_NAMES.backlink, SlideMenu.CLASS_NAMES.control);
         backLink.setAttribute('data-action', Action.Back);
+        backLink.setAttribute('href', '#');
 
         const backLinkLi = document.createElement('li');
         backLinkLi.appendChild(backLink);
